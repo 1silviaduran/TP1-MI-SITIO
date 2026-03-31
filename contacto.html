@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto - T.P. 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <seccion class="contacto-seccion">
+            <h1>Formulario de Contacto</h1>
+            <p>Por favor, complete los siguientes campos para enviarnos su menaje.</p>
+            <form action="#"method="post"
+id="form-contacto">
+
+    <div class="form-group">
+    <label for="nombre">Nombre Completo</label>
+    <input type="text" id="nombre"name="nombre" 
+    placeholder="Tu nombre..."required minlength="3">
+    <span class="error-mensaje"></span>
+    </div>
+
+    <div class="form-group">
+     <label for="email">Correo Electronico:</label>
+     <input type="email" id="email"name="email" 
+     placeholder="correo@ejemplo.com" required>
+    </div>
+
+    <div class="form-group">
+     <label for="tel">Telefono de Contacto:</label>
+    <input type="tel"id="tel" name="tel" placeholder="1122334455" pattern="[0-9]{10}">
+     <span class="error-mensaje"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="motivo">Motivo de su consulta:</label>
+
+        <select id="motivo" name="motivo">
+
+            <option value="consulta">Consulta</option>
+
+            <option value="presupuesto">Solicitar Presupuesto</option>
+
+            <option value="soporte">Soporte Tecnico</option>
+        </select>
+    </div>
+
+    <div class="for-group">
+    <label for="mensaje">Su Mensaje:</label>
+    <textarea id="mensaje" name="mensaje"placeholder="Escriba aqui su mensaje..."
+    required minlength="10" rows="5"></textarea>
+    <span class="error-mensaje"></span>
+    </div>
+    
+    <div class="form-group-submit"></div>
+        <button type="submit">Enviar Mensaje</button>
+    </div>
+    </form>
+        </seccion>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Mi Sitio Web. Todos los derechos reservados. </p>
+    </footer>
+
+    </body>
+    </html>
+
